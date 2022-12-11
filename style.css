@@ -1,0 +1,53 @@
+body {
+  background-color: #e0e0e0;
+}
+
+.btn {
+  position: relative;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #cacaca, #f0f0f0);
+  box-shadow: 28px -28px 62px #c1c1c1, -28px 28px 62px #ffffff;
+  transition: 500ms;
+  cursor: auto !important;
+}
+.btn:hover {
+  background: #e0e0e0;
+  box-shadow: -22px 22px 28px #5a5a5a, 22px -22px 28px #ffffff;
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+.btn a {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn a:hover {
+  text-shadow: var(--brShadow), var(--tlShadow);
+}
+small {
+  font-family: monospace;
+}
+
+:root {
+  --colorMain: #e0e0e0;
+  --brShadow: -6px 6px 15px rgba(0, 0, 0, 1);
+  --tlShadow: 6px -6px 15px rgba(255, 255, 255, 01);
+}
+.text:hover {
+  color: rgba(255, 0, 0, 0.46);
+}
+.text {
+  transition: 0.5s;
+  color: var(--colorMain);
+  font-size: 3em;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-shadow: var(--brShadow), var(--tlShadow);
+  position: relative;
+}
+.text::before,
+.text::after {
+  position: absolute;
+  background: var(--colorMain);
+  content: "";
+  border-radius: 10%;
+}
