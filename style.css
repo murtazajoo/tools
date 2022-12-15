@@ -35,3 +35,26 @@ small {
   font-weight: 700;
   text-transform: uppercase;
 }
+.btn-purple {
+  border: 1px solid purple !important;
+}
+.bg-purple {
+  background-color: purple !important;
+}
+.btn-outline-purple {
+  border: 1px solid purple !important;
+  color: purple !important;
+}
+.bg-hot {
+  background-color: rgb(255, 1, 1) !important;
+  right: -10px;
+  position: absolute !important;
+  top: 0px !important;
+  border-radius: -23px;
+  padding: -4px;
+  transform: rotate(49deg);
+  font-size: 10px;
+}
+.box {
+  display: inline;
+}
