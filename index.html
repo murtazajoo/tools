@@ -40,6 +40,10 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/1443690ef3.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -80,12 +84,35 @@
               checked
               autocomplete="off"
             />
-            <label class="btn btn-outline-dark" for="all">all</label>
+            <label class="btn btn-outline-dark" for="all"
+              ><i class="fa-solid fa-house"></i
+            ></label>
+          </p>
+          <p class="m-2 mx-auto col-lg-1 col-md-4 col-6 text-center">
+            <input
+              type="radio"
+              name="filter"
+              class="btn-check"
+              id="liked"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-danger position-relative" for="liked"
+              ><i class="fa-solid fa-heart"></i
+              ><span
+                class="position-absolute top-new start-00 translate-middle badge rounded-pill p-1 bg-danger"
+              >
+                <small>new</small>
+              </span></label
+            >
           </p>
         </div>
       </div>
+      <div id="custom-alert"></div>
       <section>
-        <div class="container-fluid text-center m-auto" id="main"></div>
+        <div
+          class="container-fluid text-center m-auto py-3 px-2 pb-5 mb-5"
+          id="main"
+        ></div>
       </section>
     </main>
     <footer>

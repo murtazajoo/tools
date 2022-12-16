@@ -9,6 +9,7 @@ body {
   box-shadow: 28px -28px 62px #c1c1c1, -28px 28px 62px #ffffff;
   transition: 500ms;
   font-weight: 500;
+  cursor: auto !important;
 }
 .buttons:hover {
   background: #e0e0e0;
@@ -45,6 +46,9 @@ small {
   border: 1px solid purple !important;
   color: purple !important;
 }
+.text-purple {
+  color: purple !important;
+}
 .bg-hot {
   background-color: rgb(255, 1, 1) !important;
   right: -10px;
@@ -57,4 +61,52 @@ small {
 }
 .box {
   display: inline;
+  position: relative !important;
+}
+.liked {
+  position: absolute !important;
+  top: 0;
+}
+.liked .fa-solid {
+  color: #dc3545;
+}
+.liked .fa-regular {
+  display: none;
+}
+
+.box:hover .fa-regular {
+  display: inline-block !important;
+  z-index: 1;
+}
+
+.btn-teal {
+  border: 1px solid teal !important;
+}
+.bg-teal {
+  background-color: teal !important;
+}
+.btn-outline-teal {
+  border: 1px solid teal !important;
+  color: teal !important;
+}
+.text-teal {
+  color: teal !important;
+}
+
+.btn-orange {
+  border: 1px solid orange !important;
+}
+.bg-orange {
+  background-color: orange !important;
+}
+.btn-outline-orange {
+  border: 1px solid orange !important;
+  color: orange !important;
+}
+.text-orange {
+  color: orange !important;
+}
+.top-new {
+  top: -5px !important;
+  left: -3px !important;
 }
