@@ -110,3 +110,9 @@ small {
   top: -5px !important;
   left: -3px !important;
 }
+
+@media(max-width:800px){
+  .liked .fa-regular {
+  display: inline-block !important;
+}
+}
