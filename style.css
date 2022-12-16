@@ -1,23 +1,56 @@
 body {
-  background-color: #e0e0e0;
+  color: #fff !important;
+  background-color: #252525;
+  background: #0f2027; /* fallback for old browsers */
 }
 
 .buttons {
   position: relative;
   border-radius: 20px;
+  background: -o-linear-gradient(45deg, #cacaca, #f0f0f0);
   background: linear-gradient(45deg, #cacaca, #f0f0f0);
-  box-shadow: 28px -28px 62px #c1c1c1, -28px 28px 62px #ffffff;
-  transition: 500ms;
+  background-color: #fff;
+
+  /* -webkit-box-shadow: 0px 0px 228px 0px rgba(217, 0, 250, 0.24);
+  -moz-box-shadow: 0px 0px 228px 0px rgba(217, 0, 250, 0.24);
+  box-shadow: 0px 0px 228px 0px rgba(217, 0, 250, 0.24); */
+  /* box-shadow: 28px -28px 62px #c1c1c1, -28px 28px 62px #ffffff; */
+  -webkit-transition: 900ms;
+  -o-transition: 900ms;
+  transition: 900ms;
   font-weight: 500;
   cursor: auto !important;
 }
 .buttons:hover {
   background: #e0e0e0;
-  box-shadow: -22px 22px 28px #5a5a5a, 22px -22px 28px #ffffff;
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
   /* transform: scale3d(1.1, 1.1, 1.1); */
-  text-shadow: var(--brShadow), var(--tlShadow);
+  /* text-shadow: var(--brShadow), var(--tlShadow); */
 }
-
+.buttons .badge {
+  text-shadow: var(--brShadow), var(--tlShadow);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
 small {
   font-family: monospace;
 }
@@ -25,7 +58,9 @@ small {
 :root {
   --colorMain: #e0e0e0;
   --brShadow: -6px 6px 15px rgba(0, 0, 0, 1);
-  --tlShadow: 6px -6px 15px rgba(255, 255, 255, 01);
+  --tlShadow: 6px -6px 15px rgb(6, 6, 6);
+  --bs-btn-active-bg: purple;
+  --bs-btn-active-color: pink;
 }
 
 .heading {
@@ -37,18 +72,21 @@ small {
   text-transform: uppercase;
 }
 .btn-purple {
-  border: 1px solid purple !important;
+  border: 1px solid rgb(124, 42, 124) !important;
 }
 .bg-purple {
   background-color: purple !important;
 }
 .btn-outline-purple {
-  border: 1px solid purple !important;
-  color: purple !important;
+  border: 1px solid rgb(124, 42, 124) !important;
+  color: rgb(124, 42, 124);
+  --bs-btn-active-bg: rgb(124, 42, 124) !important;
+  --bs-btn-active-color: white !important;
 }
 .text-purple {
-  color: purple !important;
+  color: rgb(124, 42, 124) !important;
 }
+
 .bg-hot {
   background-color: rgb(255, 1, 1) !important;
   right: -10px;
@@ -56,6 +94,8 @@ small {
   top: 0px !important;
   border-radius: -23px;
   padding: -4px;
+  -webkit-transform: rotate(49deg);
+  -ms-transform: rotate(49deg);
   transform: rotate(49deg);
   font-size: 10px;
 }
@@ -66,17 +106,22 @@ small {
 .liked {
   position: absolute !important;
   top: 0;
+  cursor: pointer;
 }
 .liked .fa-solid {
   color: #dc3545;
 }
 .liked .fa-regular {
-  display: none;
+  opacity: 0;
+  -webkit-transition: 700ms;
+  -o-transition: 700ms;
+  transition: 700ms;
 }
 
 .box:hover .fa-regular {
   display: inline-block !important;
   z-index: 1;
+  opacity: 1;
 }
 
 .btn-teal {
@@ -87,7 +132,9 @@ small {
 }
 .btn-outline-teal {
   border: 1px solid teal !important;
-  color: teal !important;
+  color: teal;
+  --bs-btn-active-bg: teal !important;
+  --bs-btn-active-color: white !important;
 }
 .text-teal {
   color: teal !important;
@@ -101,7 +148,9 @@ small {
 }
 .btn-outline-orange {
   border: 1px solid orange !important;
-  color: orange !important;
+  color: orange;
+  --bs-btn-active-bg: orange !important;
+  --bs-btn-active-color: white !important;
 }
 .text-orange {
   color: orange !important;
@@ -111,8 +160,9 @@ small {
   left: -3px !important;
 }
 
-@media(max-width:800px){
+@media (max-width: 800px) {
   .liked .fa-regular {
-  display: inline-block !important;
-}
+    display: inline-block !important;
+    opacity: 1;
+  }
 }
