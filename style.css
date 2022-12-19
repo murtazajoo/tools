@@ -3,14 +3,18 @@ body {
   background-color: #252525;
   background: #0f2027; /* fallback for old browsers */
 }
-
+.head {
+  z-index: 1;
+  background: #082734 !important; /* fallback for old browsers */
+}
 .buttons {
   position: relative;
   border-radius: 20px;
   background: -o-linear-gradient(45deg, #cacaca, #f0f0f0);
   background: linear-gradient(45deg, #cacaca, #f0f0f0);
   background-color: #fff;
-
+  max-width: 300px;
+  word-wrap: break-word;
   /* -webkit-box-shadow: 0px 0px 228px 0px rgba(217, 0, 250, 0.24);
   -moz-box-shadow: 0px 0px 228px 0px rgba(217, 0, 250, 0.24);
   box-shadow: 0px 0px 228px 0px rgba(217, 0, 250, 0.24); */
@@ -81,6 +85,8 @@ label {
 .alert {
   font-weight: 700;
   text-transform: uppercase;
+  width: 80%;
+  margin: 0 auto !important;
 }
 .btn-purple {
   border: 1px solid rgb(124, 42, 124) !important;
@@ -171,7 +177,10 @@ label {
   left: -3px !important;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
+  .head {
+    position: relative !important;
+  }
   .liked .fa-regular {
     display: inline-block !important;
     opacity: 1;
