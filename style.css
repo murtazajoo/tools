@@ -190,3 +190,8 @@ label {
     opacity: 1;
   }
 }
+@media (max-width: 600px) {
+  .b-ad {
+    display: none !important;
+  }
+}
