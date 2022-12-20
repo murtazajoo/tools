@@ -2,9 +2,10 @@ body {
   color: #fff !important;
   background-color: #252525;
   background: #0f2027; /* fallback for old browsers */
+  overflow-x: hidden;
 }
 .head {
-  z-index: 1;
+  z-index: 3;
   background: #082734 !important; /* fallback for old browsers */
 }
 .buttons {
@@ -22,9 +23,11 @@ body {
   -webkit-transition: 900ms;
   -o-transition: 900ms;
   transition: 900ms;
+
   font-weight: 500;
   cursor: auto !important;
 }
+
 .buttons:hover {
   background: #e0e0e0;
   -webkit-transform: translateY(-5px);
@@ -70,6 +73,7 @@ small {
 .heading {
   font-family: monospace !important;
 }
+.head,
 label {
   -webkit-box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
     rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
