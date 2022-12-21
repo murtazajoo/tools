@@ -180,10 +180,7 @@ label {
   top: -5px !important;
   left: -3px !important;
 }
-.ads {
-  height: 50px;
-  overflow: hidden;
-}
+
 @media (max-width: 1000px) {
   .head {
     position: relative !important;
