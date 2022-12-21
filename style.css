@@ -194,4 +194,7 @@ label {
   .b-ad {
     display: none !important;
   }
+  .ads {
+    display: none !important;
+  }
 }
