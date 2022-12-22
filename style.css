@@ -1,6 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 body {
   color: #fff !important;
-  background-color: #252525;
+  background-color: #0f2027;
   background: #0f2027; /* fallback for old browsers */
   overflow-x: hidden;
 }
@@ -191,10 +198,12 @@ label {
   }
 }
 @media (max-width: 600px) {
-  .b-ad {
-    display: none !important;
-  }
   .ads {
     display: none !important;
   }
+}
+#closeads {
+  right: 10px;
+  color: #333;
+  text-transform: lowercase;
 }
